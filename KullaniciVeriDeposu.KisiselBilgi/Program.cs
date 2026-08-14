@@ -20,7 +20,7 @@
             string yasGelenDeger = Console.ReadLine();
             int yas = int.Parse(yasGelenDeger);
 
-            Console.WriteLine($"{ad} {soyad} Merhaba, {ilIlce} bölgesinde {meslek} mesleğini yapıyorsunuz. {yas} yaşındasınız.");
+            Console.WriteLine($"{ad} {soyad} Merhaba, {ilIlce} bölgesinde {meslek} mesleğini yapıyorsunuz. {yas} yaşındasınız."); 
         }
     }
 }
