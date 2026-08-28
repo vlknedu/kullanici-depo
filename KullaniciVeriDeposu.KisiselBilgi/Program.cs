@@ -18,9 +18,11 @@
 
             Console.Write("Yaşınızı girin: ");
             string yasGelenDeger = Console.ReadLine();
-            int yas = int.Parse(yasGelenDeger);
+            bool sonuc = int.TryParse(yasGelenDeger, out int yas);
 
-            Console.WriteLine($"{ad} {soyad} Merhaba, {ilIlce} bölgesinde {meslek} mesleğini yapıyorsunuz. {yas} yaşındasınız."); 
+            Console.WriteLine($"{ad} {soyad} Merhaba, {ilIlce} bölgesinde {meslek} mesleğini yapıyorsunuz. {yas} yaşındasınız");
+
+            Console.WriteLine($"Yaşınızı doğru mu girdiniz? {sonuc}. Programdan çıkmak için ESC tuşuna basın.");
         }
     }
 }
