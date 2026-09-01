@@ -18,7 +18,7 @@
 
             Console.Write("Yaşınızı girin: ");
             string yasGelenDeger = Console.ReadLine();
-            bool sonuc = int.TryParse(yasGelenDeger, out int yas);
+            bool sonuc = int.TryParse(yasGelenDeger, out int yas); // bu bölüm kritik
 
             Console.WriteLine($"{ad} {soyad} Merhaba, {ilIlce} bölgesinde {meslek} mesleğini yapıyorsunuz. {yas} yaşındasınız");
 
